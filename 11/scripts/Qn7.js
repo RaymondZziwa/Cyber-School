@@ -22,5 +22,5 @@ const wrong = () => {
 }
 
 const forward = () => {
-  location.href="Qn7.html";
+  location.href="index.html";
 }
