@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <style>
+        html,body{
+            margin: 0 auto;
+            background-image: url(imgs/bg.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: comic-sans;
+            font-family: 'Nunito', sans-serif;
+            font-weight: bold;
+            height: 630px;
+            max-width: 980px;
+            overflow-y: hidden;
+            font-size: 1.2rem;
+            overflow-x: hidden;
+        }
+        .imgo{
+            height: 30px;
+            width: 110px;
+        }
+        .correct {
+            border: 3px dashed greenyellow;
+            border-radius: 20px;
+        }
+
+        .wrong {
+            border: 3px dashed red;
+            border-radius: 20px;
+        }
+        button{
+            padding: 10px; color: white; font-family: helvetica; font-weight: bold; font-size: 15px; border-radius: 30px; padding-right: 30px; padding-left: 30px; padding-top: 5px; padding-bottom: 5px; background:linear-gradient(red, maroon, black); cursor: pointer; margin-left: 80px;margin-top: 10px;width: 100px;
+        }
+        button:hover{
+            background-image: -moz-none;
+            background-image: -webkit-none;
+            background-image: -webkit-none;
+            background-image: -o-none;
+            background-image:none;
+            background-color: red;
+            transition: 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+            <div class="row" style="background-image: url(imgs/qtn.png);width: 100%;height: 80px;background-repeat: no-repeat;background-size: contain;margin-left: 15px;">
+            </div>
+          
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                   <center>
+              <div style="width: 950px; height: 100px; background: linear-gradient(black, #414339 ); position: absolute; top: 0px; z-index: 50;">
+                <div>
+                  <div style="width: 800px; height: 80px; background: linear-gradient(#404037, #231f1e); position: absolute; top: 10px; margin-left: 100px; z-index: 60; border-radius: 50px">
+                      <h3 style="color: white; font-weight: bold; font-family: helvetica;">TOPIC 1.2 STATES OF MATTER</h3><br>
+                      <h3 style="color: white;font-size:1.2rem; font-weight: bold; font-family: helvetica; margin-top: 5px; position: absolute; top: 45px; margin-left: 123px;font-size: 20px;">Evidence for particles in air</h3>
+                  </div>
+                </div>
+              </div>
+        
+              <!--******************Activity banner***************************************************-->
+              <div style="width: 950px; height: 60px; background-color: maroon; position: absolute; top: 100px; z-index: 50; border-bottom:  10px solid #EE9A45;">
+                <h3 style="color: black; font-size: 20px; font-family: helvetica; font-weight: lighter; z-index: 66; margin-left: 10px;color: white;" id="h3">
+        </h3>
+              </div>
+              </div>
+            </center> 
+                   </div>
+            </div>
+
+
+            <div class="row" style="margin-top: 80px;" id="qtn1">
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    1 a) What is Brownian motion?
+                    <input type="text" style="border: none;background-color:#FBAB64;height:40px;width: 850px;border-radius: 50px;" id="input1"><span id="status1"></span><br>
+                    <p id="ans1" style="color: white;background-color: #231f1e;margin: 5px;width: 940px;display: none;">Brownian motion is the continuous random movement of small particles immersed in a fluid.</p>
+                       
+                     b) What is diffusion?
+                    <input type="text" style="border: none;background-color:#FBAB64;height:40px;width: 850px;border-radius: 50px;margin-top: 10px;" id="input2"><span id="status2"></span>
+                    <p id="ans2" style="color: white;background-color: #231f1e;margin: 5px;width: 940px;display: none;">Diffusion is the flow of particles from a region of higher concentration to a region of lower concentration.</p>
+                </div>
+            </div>
+
+            <div class="row" style="margin-top: 100px;display: none;" id="pt2">
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    What can be done to the setup shown in the diagram below to make the color of potassium permanganate to spread faster without affecting the volume of the solution?
+                    <img src="imgs/beakers.png" width="800px">
+                    <div class="row" style="margin-top: 10px;margin-left: 35px;">
+                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                            <img src="imgs/freeze.png" height="50px" width="120px" style="cursor: pointer;" id="freeze" onclick="clicked(this.id)">
+                            <img src="imgs/heat.png" height="50px" width="120px" style="margin-left: 180px;cursor: pointer;" id="heat" onclick="clicked(this.id)">
+                            <img src="imgs/wait.png" height="50px" width="120px" style="margin-left: 180px;cursor: pointer;" id="wait" onclick="clicked(this.id)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" style="margin-top: 10px;display: none;" id="st2">
+                <div class="col-sm-12 col-md-2 col-lg-2 col-xl-2" style="margin: auto;">
+                    <span id="status"></span>
+                </div>
+            </div>
+
+            <div class="row" id="qtn">
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    <button id="check_btn" style="display: none;float: right;" onclick="check()">Check</button>
+                    <button id="reset_btn" onclick="reset()">Reset</button>
+                          <button id="prev_btn" style="display: none;" onclick="previous()">Back</button>
+                          
+                          <button id="next_btn" onclick="next()">Next</button>
+                          
+
+                    
+                </div>
+            </div> 
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+          var j=0, text;
+        text = "Study and answer the questions below";
+  
+        function typing(){
+          if (j < text.length){
+            document.getElementById("h3").innerHTML += text.charAt(j);
+            j++;
+            setTimeout(typing, 30);
+           
+          }
+          $("#point1").fadeIn();
+          $("Points").fadeIn();
+  
+        }
+        typing();
+        });
+      </script>
+</body>
+</html>
+
+
